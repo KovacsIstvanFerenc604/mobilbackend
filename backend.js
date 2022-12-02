@@ -27,6 +27,8 @@ app.get('/videokartya', (req, res) => {
     
     connection.end()
   })
+
+//------------------------minden gépház lekérdezés minden adattal 
   app.get('/gephaz', (req, res) => {
     const mysql = require('mysql')
     const connection = mysql.createConnection({
